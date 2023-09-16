@@ -18,7 +18,6 @@ body {
 .brand {
   flex: 2;
   text-align: center;
-  font-family: "Space Grotesk", sans-serif;
   font-size: 2em;
   letter-spacing: 3px;
 }
