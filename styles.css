@@ -18,7 +18,7 @@ body {
 .brand {
   flex: 2;
   text-align: center;
-  font-size: 2em;
+  font-size: 1.5em;
   letter-spacing: 3px;
 }
 
@@ -72,7 +72,7 @@ body {
   }
 
   .brand {
-    font-size: 1em;
+    font-size: 0.5em;
   }
 }
 
@@ -81,15 +81,16 @@ body {
   .nav {
     position: absolute;
     top: 60px;
-    width: 30%;
-    left: 0;
+    width: 40%;
     border-radius: 50px;
+    left: 10px;
+    transform: translateX(-150%);
   }
 
   .nav ul {
     flex-direction: column;
     height: 100vh;
-    align-items: center;
+    align-items: flex-start;
     background-color: rgb(22, 21, 21);
   }
   .menu-toggle {
