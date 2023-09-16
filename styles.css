@@ -16,15 +16,15 @@ body {
 }
 
 .brand {
-  flex: 3;
+  flex: 2;
   text-align: center;
-  font-family: "Ma Shan Zheng", cursive;
+  font-family: "Space Grotesk", sans-serif;
   font-size: 2em;
   letter-spacing: 3px;
 }
 
 .nav {
-  flex: 2;
+  flex: 3;
   display: flex;
   justify-content: flex-start;
 }
@@ -38,7 +38,7 @@ body {
 .nav ul li {
   list-style: none;
   font-size: 1.5em;
-  font-family: "Fuggles", cursive;
+  font-family: "Space Grotesk", sans-serif;
   letter-spacing: 1px;
 }
 
@@ -84,14 +84,12 @@ body {
     top: 60px;
     width: 30%;
     left: 0;
-    background-color: rgb(22, 21, 21);
-    transform: translateX(-100%);
+    border-radius: 50px;
   }
 
   .nav ul {
     flex-direction: column;
     height: 100vh;
-    background-color: rgb(22, 21, 21);
     align-items: center;
   }
   .menu-toggle {
