@@ -90,7 +90,9 @@ body {
     left: 10px;
     transform: translateX(-150%);
   }
-
+  .brand {
+    font-size: 1.1em;
+  }
   .nav ul {
     flex-direction: column;
     height: 100vh;
@@ -98,7 +100,7 @@ body {
     background-color: rgb(22, 21, 21);
   }
 
-  .nav li {
+  .nav ul li {
     font-size: 1.2em;
   }
 
