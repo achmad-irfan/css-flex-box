@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+body {
+  background-color: rgb(141, 149, 142);
+}
+
+.container {
+  background-color: rgb(22, 21, 21);
+  display: flex;
+  align-items: center;
+  height: 50px;
+}
+
+.brand {
+  flex: 3;
+  text-align: center;
+  font-family: "Ma Shan Zheng", cursive;
+  font-size: 2em;
+  letter-spacing: 3px;
+}
+
+.nav {
+  flex: 2;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.nav ul {
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav ul li {
+  list-style: none;
+  font-size: 1.5em;
+  font-family: "Fuggles", cursive;
+  letter-spacing: 1px;
+}
+
+.nav ul li a {
+  text-decoration: none;
+}
+
+.nav ul li a:hover {
+  color: rgb(237, 233, 13);
+}
+
+/* toggle */
+.menu-toggle {
+  display: none;
+}
+.menu-toggle span {
+  color: black;
+  display: block;
+  width: 28px;
+  height: 3px;
+  background-color: white;
+}
+/* Responsive Breakpoint */
+/* tablet */
+@media screen and (max-width: 768px) {
+  .brand,
+  .nav {
+    flex: 1;
+  }
+  .nav ul {
+    width: 100%;
+  }
+
+  .brand {
+    font-size: 1em;
+  }
+}
+
+/* mobile */
+@media screen and (max-width: 576px) {
+  .nav {
+    position: absolute;
+    top: 60px;
+    width: 30%;
+    left: 0;
+    background-color: rgb(22, 21, 21);
+    transform: translateX(-100%);
+  }
+
+  .nav ul {
+    flex-direction: column;
+    height: 100vh;
+    background-color: rgb(22, 21, 21);
+    align-items: center;
+  }
+  .menu-toggle {
+    flex: 0.2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 20px;
+    cursor: pointer;
+  }
+
+  .slide {
+    transform: translateX(0);
+  }
+}
